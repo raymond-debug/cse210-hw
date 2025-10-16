@@ -1,0 +1,20 @@
+1. Abstraction
+What it means: Abstraction means showing only the important parts of an object and hiding the details. It helps you focus on what something does, not how it works.
+How I used it: In my Eternal Quest program, I made a base class called Goal with methods like RecordEvent() and GetStatus(). I didn’t write the full logic there — I let each goal type (like SimpleGoal or ChecklistGoal) handle it in their own way.
+Why it helps: This made it easy to add new goal types later without changing the rest of the program. Everything works through the same interface.
+
+2. Encapsulation
+What it means: Encapsulation means keeping data private inside a class and using methods to access or change it. It protects the data and keeps things organized.
+How I used it: In my Fitness Tracker program, I kept things like distance, speed, and laps private. I used methods like GetDistance() to access them.
+Why it helps: If I ever change how I calculate distance or store data, I don’t have to change other parts of the program. It keeps things flexible and safe.
+
+3. Inheritance
+What it means: Inheritance lets one class use the code from another class. It helps you reuse code and organize related things.
+How I used it: I made a base class called Activity for my Fitness Tracker. Then I created Running, Cycling, and Swimming classes that inherited from it. They all shared things like date and minutes.
+Why it helps: I didn’t have to repeat code in each activity. If I want to add a new activity later, I can just inherit from Activity and focus on the new parts.
+
+4. Polymorphism
+What it means: Polymorphism means different classes can use the same method name, but each one does something different. You can treat different objects the same way.
+How I used it: In my Eternal Quest program, I had a list of Goal objects. I called RecordEvent() and GetStatus() on each one, and they responded based on their type — SimpleGoal, EternalGoal, or ChecklistGoal.
+Why it helps: I didn’t need separate code for each goal type. I could loop through all goals and let each one handle itself. That makes the program easier to expand and maintain.
+
